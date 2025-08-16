@@ -2,7 +2,7 @@
  on:
    workflow_call: #被呼叫
      inputs:
-       version:
+       version: aaa
          required: true
          type: string
  jobs:
