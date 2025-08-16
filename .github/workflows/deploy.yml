@@ -4,6 +4,6 @@ on:
 
 jobs:
   call-build:
-    uses: Rita10350089/test-github-/.github/workflows/build.yml@main
+    uses: Rita10350089/test-github/.github/workflows/build.yml@main
     with:
       version: "3.10"
