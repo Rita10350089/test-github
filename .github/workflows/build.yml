@@ -1,10 +1,10 @@
  name: Build Reusable
  on:
-   workflow_call: #被呼叫
-     inputs:
-       version: aaa
-         required: true
-         type: string
+   workflow_call: #被呼叫 #接收其他的action或workflow呼叫
+     inputs: #保留字，用來定義參數的地方
+       version: aaa #外部呼叫的參數名稱
+         required: true #參數的必要性
+         type: string #支援string,bool,int
          default: "3.10"
  jobs:
    build: #自行取名
