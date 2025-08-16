@@ -7,7 +7,7 @@
          type: string    #保留字不能改名，支援string,bool,int
          default: "3.10" #保留字不能改名
  jobs:                   #保留字不能改名
-   build: #自行取名       #名稱可自訂
+   build:                #名稱可自訂
      runs-on: ubuntu-latest #保留字不能改名
      steps:                 #保留字不能改名
        -run: echo "Building version ${{ inputs.version}}"
