@@ -1,6 +1,6 @@
  name: Build Reusable
  on:
-   workflow_call:
+   workflow_call: #被呼叫
      inputs:
        version:
          required: true
