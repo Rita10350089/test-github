@@ -1,1 +1,13 @@
+ name: Deploy App
+ on:
+   workflow_dispatch:
+     inputs:
+       version:
+         required: true
+         type: string
+ jobs:
+   call-build:
+     uses: Rita10350089/test-github-/.github/workflows/build.yml@main
+     with:
+       version: ${{ inputs.version}}
 
