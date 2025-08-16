@@ -7,7 +7,7 @@
          type: string
          default: "3.10"
  jobs:
-   build:
+   build: #自行取名
      runs-on: ubuntu-latest
      steps:
        -run: echo "Building version ${{ inputs.version}}"
